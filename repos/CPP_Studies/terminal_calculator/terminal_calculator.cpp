@@ -16,6 +16,16 @@ int main(){
       std::cout << "+,-,*, and / are supported. Please choose one and type below" << std::endl;
       std::cout << "Your operation: ";
       std::cin >> operation;
+      
+      if((operation != '+') &&
+         (operation != '-') &&
+         (operation != '*') &&
+         (operation != '/')) 
+      {
+        std::cout << "Operation is not supported." << std::endl;
+        continue;
+      }
+      
      
       std::cout << std::endl;
       std::cout << "Please type in your two operands seperated by a space and hit enter: ";
